@@ -41,8 +41,8 @@ disable_oom_kills()
 	sudo sysctl -q -w vm.overcommit_memory=1
 
 	# This is OK for [8192, 8192] page configuration.
-	sudo sysctl -q -w kernel.shmmax=34359738368
-	sudo sysctl -q -w kernel.shmall=34359738368
+	sudo sysctl -q -w kernel.shmmax=18446744073692774399
+	sudo sysctl -q -w kernel.shmall=18446744073692774399
 }
 
 drop_shm()
